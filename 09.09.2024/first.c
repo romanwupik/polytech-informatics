@@ -47,6 +47,16 @@ m4:
         printf("You must enter 2 numbers!\n\n");
         goto m4;
     }
+
+    if (a > 100000 || a < 0) {
+        printf("a must be in [0; 100000]\n\n");
+        goto m4;
+    }
+    if (b > 32 || b < 0) {
+        printf("b must be in [0; 32]\n\n");
+        goto m4;
+    }
+
     print_number(a, b);
     return 0;
 }
