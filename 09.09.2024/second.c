@@ -14,6 +14,14 @@ m1:
         goto m1;
     }
     int a_copy = a;
+    if (a > 100000 || a < 0) {
+        printf("a must be in [0; 100000]\n\n");
+        goto m1;
+    }
+    if (b > 32 || b < 0) {
+        printf("b must be in [0; 32]\n\n");
+        goto m1;
+    }
 
 m2:
     a_copy /= b;
